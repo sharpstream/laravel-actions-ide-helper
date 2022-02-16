@@ -2,19 +2,13 @@
 
 namespace Wulfheart\LaravelActionsIdeHelper\Commands;
 
-use Composer\Autoload\ClassMapGenerator;
-use Illuminate\Console\Command;
-use phpDocumentor\Reflection\Php\Factory\Type;
-use phpDocumentor\Reflection\TypeResolver;
-use phpDocumentor\Reflection\Types\Nullable;
-use PhpParser\BuilderFactory;
-use PhpParser\PrettyPrinter\Standard;
 use ReflectionClass;
 use Riimu\Kit\PathJoin\Path;
+use Illuminate\Console\Command;
 use Symfony\Component\Finder\Finder;
+use Barryvdh\LaravelIdeHelper\ClassMapGenerator;
 use Wulfheart\LaravelActionsIdeHelper\Service\ActionInfo;
 use Wulfheart\LaravelActionsIdeHelper\Service\BuildIdeHelper;
-use Wulfheart\LaravelActionsIdeHelper\Service\Generator\DocBlock\AsObjectGenerator;
 
 class LaravelActionsIdeHelperCommand extends Command
 {
